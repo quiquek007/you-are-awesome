@@ -171,6 +171,7 @@ describe(('You are awesome, aren\'t you?'), () => {
     e.__proto__ = f;
     f.__proto__ = g;
     g.__proto__ = h;
+
     
     let arr = sortByProto([d, b, h, a]);
     assert.deepEqual(arr, [a, b, d, h]);
